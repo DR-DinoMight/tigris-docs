@@ -38,7 +38,7 @@ Similar, to a single row insert, you can also insert multiple documents by passi
 
 <CodeBlock language={props.codeLang}>{props.batchInsert}</CodeBlock>
 
-## Upsert a Single Document
+## Replace a Single Document
 
 Insert or replace operation can be used to insert a new document or replace an existing document with the same
 primary key value. This API is useful when there is no need for a uniqueness check on the primary key, and it is fine
@@ -47,13 +47,13 @@ so the below operation will replace the document with the newly provided data.
 
 <AsyncCodeBlock
   codeLang={props.codeLang}
-  defaultExample={props.simpleUpsert}
-  asyncExample={props.asyncSimpleUpsert}
+  defaultExample={props.simpleReplace}
+  asyncExample={props.asyncSimpleReplace}
 />
 
-## Upsert Multiple Documents
+## Replace Multiple Documents
 
 As the API can also be used when the document doesn't exist. The following is an example of when these two
 documents are inserted because there are no corresponding ids.
 
-<CodeBlock language={props.codeLang}>{props.batchUpsert}</CodeBlock>
+<CodeBlock language={props.codeLang}>{props.batchReplace}</CodeBlock>

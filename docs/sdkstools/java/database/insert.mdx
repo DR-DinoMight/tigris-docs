@@ -10,9 +10,9 @@ import asyncCreateCollectionSource from "!!raw-loader!../_snippets/insert/_async
 import simpleInsertSource from "!!raw-loader!../_snippets/insert/_simpleInsert";
 import asyncSimpleInsertSource from "!!raw-loader!../_snippets/insert/_asyncSimpleInsert";
 import batchInsertSource from "!!raw-loader!../_snippets/insert/_batchInsert";
-import simpleUpsertSource from "!!raw-loader!../_snippets/insert/_simpleUpsert";
-import asyncSimpleUpsertSource from "!!raw-loader!../_snippets/insert/_asyncSimpleUpsert";
-import batchUpsertSource from "!!raw-loader!../_snippets/insert/_batchUpsert";
+import simpleReplaceSource from "!!raw-loader!../_snippets/insert/_simpleReplace";
+import asyncSimpleReplaceSource from "!!raw-loader!../_snippets/insert/_asyncSimpleReplace";
+import batchReplaceSource from "!!raw-loader!../_snippets/insert/_batchReplace";
 
 <InsertTemplate
   codeLang="java"
@@ -21,9 +21,9 @@ import batchUpsertSource from "!!raw-loader!../_snippets/insert/_batchUpsert";
   simpleInsert={simpleInsertSource}
   asyncSimpleInsert={asyncSimpleInsertSource}
   batchInsert={batchInsertSource}
-  simpleUpsert={simpleUpsertSource}
-  asyncSimpleUpsert={asyncSimpleUpsertSource}
-  batchUpsert={batchUpsertSource}
+  simpleReplace={simpleReplaceSource}
+  asyncSimpleReplace={asyncSimpleReplaceSource}
+  batchReplace={batchReplaceSource}
 />
 
 export const toc = [...insertToc];

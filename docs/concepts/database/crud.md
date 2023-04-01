@@ -41,9 +41,9 @@ Replace operations provide the following behavior:
 Tigris TypeScript SDK provides the following two APIs to replace documents
 in a collection:
 
-- [insertOrReplaceOne()](../../sdkstools/typescript/database/insert.mdx#upsert-a-single-document):
+- [insertOrReplaceOne()](../../sdkstools/typescript/database/insert.mdx#replace-a-single-document):
   replace single document
-- [insertOrReplaceMany()](../../sdkstools/typescript/database/insert.mdx#upsert-multiple-documents):
+- [insertOrReplaceMany()](../../sdkstools/typescript/database/insert.mdx#replace-multiple-documents):
   batch replace documents
 
 See the language-specific sections for more examples of Replace operations:

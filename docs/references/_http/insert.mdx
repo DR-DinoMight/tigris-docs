@@ -8,8 +8,8 @@ import InsertTemplate, {
 import createCollectionSource from "!!raw-loader!./_snippets/insert/_createCollection";
 import simpleInsertSource from "!!raw-loader!./_snippets/insert/_simpleInsert";
 import batchInsertSource from "!!raw-loader!./_snippets/insert/_batchInsert";
-import simpleUpsertSource from "!!raw-loader!./_snippets/insert/_simpleUpsert";
-import batchUpsertSource from "!!raw-loader!./_snippets/insert/_batchUpsert";
+import simpleReplaceSource from "!!raw-loader!./_snippets/insert/_simpleReplace";
+import batchReplaceSource from "!!raw-loader!./_snippets/insert/_batchReplace";
 
 export const isOverview = true;
 
@@ -19,8 +19,8 @@ export const isOverview = true;
   createCollection={createCollectionSource}
   simpleInsert={simpleInsertSource}
   batchInsert={batchInsertSource}
-  simpleUpsert={simpleUpsertSource}
-  batchUpsert={batchUpsertSource}
+  simpleReplace={simpleReplaceSource}
+  batchReplace={batchReplaceSource}
 />
 
 export const toc = [...insertToc];
