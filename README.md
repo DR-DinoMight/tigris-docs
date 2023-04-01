@@ -11,14 +11,36 @@ static website generator.
   be checked by running node -v).
 - [Python](https://www.python.org/downloads/)
 - [pip](https://pip.pypa.io/en/stable/installation/)
+- [go] (https://go.dev/doc/install)
 
 ### Protocol Buffer Compiler
 
-Install protoc. Below is how you would install on macOS
+Install protoc.
+
+#### Mac OS
 
 ```shell
 brew install protobuf
 ```
+
+#### Windows
+
+ - Download the latest version of Protobuf for Windows from the [official GitHub repository](https://github.com/protocolbuffers/protobuf/releases/latest) ***(Maybe hidden under "Show all XX assets")***
+ - Extract the downloaded file to a location of your choice, such as `C:\protobuf`.
+ - Navigate to the folder in a Windows Terminal, then to the `bin` folder (e.g `cd C:\protobuf\bin`)
+ - Run `./protoc.exe --version`, you should see a similar output to
+    ```powershell
+    ❯ ./protoc.exe --version
+    libprotoc 22.2
+    ```
+ - Add the Protobuf bin directory to your system's PATH environment variable to be able to access the protoc command from anywhere in the Command Prompt.
+    - To do this, open the Start Menu and search for **"Environment Variables"**.
+    - Select **"Edit the system environment variables"**, then click the **"Environment Variables"** button.
+    - In the **"System Variables"** section, scroll down to the **"Path"** variable and click the **"Edit"** button.
+    - Click the **"New"** button and add the full path to the bin directory of the extracted Protobuf folder (e.g. `C:\protobuf\bin`).
+    - Click **"OK"** to save your changes.
+ - If everything went okay, you should be able to open up a new terminal window and type `protoc --version` and see the same output as before.
+
 
 Install protoc-gen-doc. This depends on golang.
 
@@ -32,6 +54,8 @@ go install github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc@latest
 npm install
 git submodule update --init --recursive
 ```
+
+***Note: On Windows post install may error, if so this is okay.***
 
 ## Configuration
 
